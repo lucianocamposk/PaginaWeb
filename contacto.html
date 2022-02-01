@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>AMECOM - Internet Wireless</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="http://www.amecom.com.ar/img/mifavicon.png" />
+</head>
+<body id="bodyacceso">
+	<div id="ini">
+	<a href="index.html"><img src="img/logo.png" id="logo"></a>
+	<div class="nav">
+	<ul>
+	<li><a href="index.html"><strong>HOME</strong></a></li>
+	<li><a href="servicios.html"><strong>SERVICIOS</strong></a></li>
+	<li><a href="accesoclientes.html"><strong>ACCESO CLIENTES</strong></a></li>
+	<li><a href="contacto.html"><strong>CONTACTO</strong></a></li>
+	<li><a href="rrhh.html"><strong>RECURSOS HUMANOS</strong></a></li>
+	</div></ul></div>
+<div id="formulario">
+        <h4 id="consulta">ENVIENOS SU CONSULTA</h4>
+    
+    <form onsubmit= "return validar()">
+            <h4 id="nom">NOMBRE</h4> 
+    		<input class="opc" type="text" name="nombre" id="nombre" required> 
+        	<h4 id="ape">APELLIDO</h4> 
+    		<input class="opc" type="text" name="apellido" id="apellido"  required>
+        	<H4 id="email">EMAIL</H4>
+    		<input class="opc" type="email" name="correo" id="correo" placeholder="example@hotmail.com" required>
+        	<H4 id="tel">TELEFONO</H4>
+    		<input class="opc" type="number" name="telefono" id="telefono" placeholder="+54 341 XXXXXXX" required>
+        	<H4 id="horario">HORARIO DISPONIBLE</H4>  </br>
+    		DE:
+    		<input type="number" name="" class="disponible opc" id="de" required>
+    		<select class="opc" name="turno"><option>AM</option>
+    		<option>PM</option> </select>
+    		HASTA:
+    		<input type="number" name="" class="disponible opc" id="hasta" required>
+    		<select class="opc" name="turno">
+    			<option>PM</option>
+    			<option>AM</option>
+    		 </select>
+        	<H4 id="msj">MENSAJE</H4>
+
+    		<textarea  id="mensaje"  class="opc opc3" maxlength="500" placeholder="Máximo 500 caracteres" ></textarea>  
+
+
+               	</br>
+            <button class="bot" type="submit" id="submit" value="">Enviar mensaje</button> 
+            <button class="bot" type="reset" id="borrar">Borrar datos
+            </button>
+    </form>        
+    </div>
+ <div class="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.2335973965255!2d-60.62275088484851!3d-33.023975683136904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7a85cc7f43db3%3A0x6f2d58e917f1188a!2sAMECOM+S.R.L!5e0!3m2!1ses-419!2sar!4v1538605813774" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>      </div>
+	<div class="pie">			</br>
+	          <h3> <p><strong>Eva Perón 1944 - Villa Gobernador Gálvez</strong><br>
+	          Horario de Atención: 8 a 14 hs.        <br>
+	          Horario de Atención Telefónica y Whatsapp: 8 a 17 hs. </p>	     </br>
+	        <div><strong>Tel/FAX: (0341) 492-1206 / </strong><strong>492-4337</strong></div>	        <div>
+	          <p><strong>Whatsapp: 3413369928</strong>        </p>	       	</div>	         </br>	     </h3>
+	        <img class="qr" src="https://www.afip.gob.ar/images/f960/DATAWEB.jpg"></div></div>
+</body>   
+</html>

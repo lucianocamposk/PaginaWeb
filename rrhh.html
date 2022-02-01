@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <meta charset="UTF-8">
+	<title>AMECOM - Internet Wireless</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="http://www.amecom.com.ar/img/mifavicon.png" />
+	<script src="funciones.js" ></script>
+
+<body id="bodyacceso">
+	<div id="ini">	
+		<a href="index.html"><img src="img/logo.png" id="logo"></a>   
+		<div class="nav">		<ul>
+		<li><a href="index.html"><strong>HOME</strong></a></li>
+		<li><a href="servicios.html"><strong>SERVICIOS</strong></a></li>
+		<li><a href="accesoclientes.html"><strong>ACCESO CLIENTES</strong></a></li>
+		<li><a href="contacto.html"><strong>CONTACTO</strong></a></li>
+		<li><a href="rrhh.html"><strong>RECURSOS HUMANOS</strong></a></li>	</div>	</ul>
+	</div>
+<div id="cuerpo">
+	<h2>TRABAJÁ CON NOSOTROS </h2></br>
+	<p id="parra1"> Si tenes interés legitimo en brindar un buen servicio que puedan cubrir las necesidades de las personas y pensas que podes contribuir con compromiso y calidez creando un ambiente de permanente respeto, en Amecom Wireless encontrarás oportunidades para dejar tu sello y adquirir experiencias profesionales en pos de tu desarrollo.
+	Por favor completá el formulario que esta a continuación.
+	<strong>Agradecemos tu interés por ser parte de nuestro compañia.		</strong></p>	</br>	
+	<h1 id="form">FORMULARIO</h1>	</br>
+<div id="datospersonales"><hr/></br></br>
+	
+	<H2>DATOS PERSONALES</H2>	</br>	<div>
+	<form id="tamaño" onsubmit= "return validate()">
+		
+				<input class="opc largo" type="text"   name="nombreYApellido" placeholder="Nombre y Apellido" autofocus=""  minlength="5" required>	
+				<input class="opc largo" type="text"   name="domicilio"       placeholder="Domicilio Completo" required></div>	</br></br>
+				<input class="opc largo" type="email"  name="email"           placeholder="Email" required>
+				<input class="opc largo" type="number" name="dni" required 	 placeholder="DNI"  id="dni" min="100000" max="60000000" ></br></br>
+				<h3>Género:</h3>
+					<select class="opc " name="genero" id='genero'>
+			<option>Seleccione una opción</option>
+			<option>Sin especificar	</option>
+			<option>Masculino</option>
+			<option>Femenino</option>
+			</select>		</br></br>
+		
+			<h3>Fecha de nacimiento:</h3>	
+			
+			<input abbr title="Este campo es obligatorio" id="nac" class="opc" type="date" name="fechanac" placeholder="Fecha de nacimiento" min="18"max="100" required>	</br></br>
+			<h3>Teléfono:</h3>
+			<input class="opc" type="number" required name="tel" placeholder="+54 341 353 8613" min="1000000" max="10000000000000"></div></br></br><hr/></br></br>
+		
+		<h2>ESTUDIOS CURSADOS</h2></br>
+		<div id="estudioscursados">
+			<input class="opc largo" type="text" name="titulo" placeholder="Titulo" required>	
+			<input class="opc largo" type="text" name="institucion" placeholder="institucion" required>	</br></br>
+			<input class="opc largo" type="number" pattern="^[0-9]+" name="inicio" placeholder="Año de inicio" required>
+			<input class="opc largo" type="number" pattern="^[0-9]+" name="fin" placeholder="Año de fin" required></br></br>
+			<h3>Estudios secundarios:</h3>	
+			<select class="opc" name="secundario" required>
+			<option value="">Seleccione una opción</option>
+			<option value="">Completo</option>
+			<option value="">Incompleto</option>
+			</select>
+		</br></br>
+		</div>
+		<div id="explaboral">	</br><hr/></br></br>
+			
+		<h2>EXPERIENCIA LABORAL</h2></br>	
+			<input class="opc largo" type="text" name="empresa" placeholder="Empresa" required>	
+			<input class="opc largo" type="text" name="puesto" placeholder="Puesto" required>	</br></br>
+			<input class="opc largo" type="number" name="inicio" placeholder="Año de inicio" required>
+			<input class="opc largo" type="number" name="fin" placeholder="Año de fin" required></br></br>
+			<input class="opc largo" type="text" name="contacto" placeholder="Contacto de referencia" >	
+			<input class="opc largo" type="number" name="telefono" placeholder="Telefono de referencia"></br></br></div></br><hr/>
+		</br></br>
+
+		<div id="requerimientos">
+			<h2>REQUERIMIENTOS ESPECIFICOS</h2></br></br>
+		<h3>Word:</h3>
+			<select class="opc largo2" required name="word">
+			<option value="" >none</option>
+			<option value="ninguno" >Ninguno</option>
+			<option value="" >Basico</option>
+			<option value="" >Intermedio</option>
+			<option value="" >Avanzado</option>
+			</select></br></br>
+		<h3>Excel:</h3>
+			<select class="opc largo2" required name="excel">
+			<option value="" >none</option>
+			<option value="ninguno" >Ninguno</option>
+			<option value="" >Basico</option>
+			<option value="" >Intermedio</option>
+			<option value="" >Avanzado</option>
+			</select>
+		</br></br>
+			<h3>Disponibilidad:</h3>
+			<select class="opc largo2" required="" name="word">
+			<option value="" >none</option>
+			<option value="" >Ninguno</option>
+			<option value="" >Media jornada</option>
+			<option value="" >Jornada completa</option>
+			</select>
+		</br></br>
+		</div>
+		</br>
+		<hr/>
+		<div id="interes">
+			</br></br>
+			<H2>ÁREAS DE INTERÉS PROFESIONAL</H2>
+		</br></br>
+		<div class="interes" >
+			<input  class="check"  type="checkbox" name="1"> Atencion al cliente 
+			<input class="check d1"  type="checkbox" name="1"> Administracion </br></br>
+			<input class="check" type="checkbox" name="1"> Contaduria 
+			<input class="check d2" type="checkbox" name="1"> Finanzas </br></br>
+			<input class="check" type="checkbox" name="1"> Marketing 
+			<input class="check d3" type="checkbox" name="1"> Sistemas </br></br>
+			<input class="check" type="checkbox" name=""> Mantenimiento 
+			<input class="check d4" type="checkbox" name="1"> Transcripcionista </br></br>
+			<input class="check" type="checkbox" name="1"> Atención telefónica 
+			<input class="check d5" type="checkbox" name="1"> Supervisión / Coordinación </br></br>
+			<input class="check" type="checkbox" name="1"> Gerencia 
+			<input class="check d6" type="checkbox" name="1"> RRHH</br>
+		</div>
+		</div>
+		</br></br>
+		<hr/>
+		</br>
+		<div id="otrainfo">
+		</br>
+		<h2>
+		¿Conoce algún empleado o miembro de la institución de Amecom Wireless?</h2>
+		</br>
+		<div class="select" required>
+		<input value="" required type="radio" name="si"> Si    </br>  
+		<input value="" required type="radio" name="si"> No
+		</div>
+		</br>
+		<input class="opc largo" type="text" name="conocido" placeholder="Indique nombre y apellido">
+		</br></br>
+		<h2>
+		¿Tiene algún familiar que es miembro o empleado en Amecom Wireless?
+		</h2>
+		</br>
+		<div class="select">
+				<p>
+				<input type="radio" required="" name="res" value="asd"> Si </br>
+				<input type="radio" required name="res" value="dsa"> No
+				</p>
+				</div>
+				</br>
+				<input class="opc largo" type="text" name="familiar" placeholder="Indique nombre y apellido">
+				</br></br>
+				
+				<textarea id="area" onkeyup="cuentaCaracteres(document.getElementById('area').value) " class="opc opc3" placeholder="Máximo 500 caracteres" maxlength="500"  ></textarea> </br>
+</br>
+				<h3> Cantidad de caracteres: <input type="text" value="0" size="3"id="cantCar" disabled> </h3>
+ 
+
+				</br></br>
+				<h3>Adjuntar foto de perfil</h3>
+				</br>
+			
+				<input required="" class="opc4 " type="file" name="">
+				</div>
+				</br></br>
+
+				<button class="bot" id="fin" type="submit" value="Finalizar">Finalizar</button>
+				<button class="bot" id="delete" type="reset" autofocus="nombreYApellido">Borrar datos</button>
+		
+</form>	
+</div>
+</div>
+	<div class="pie">
+			</br>
+	          <h3> <p><strong>Eva Perón 1944 - Villa Gobernador Gálvez</strong><br>
+	          Horario de Atención: 8 a 14 hs.        <br>
+	          Horario de Atención Telefónica y Whatsapp: 8 a 17 hs.          </p>
+	        </br>
+	        <div><strong>Tel/FAX: (0341) 492-1206 / </strong><strong>492-4337</strong></div>
+	        <div>
+	          <p><strong>Whatsapp: 3413369928</strong>        </p>
+	       	</div>
+	         </br>
+	     </h3>
+	        <img class="qr" src="https://www.afip.gob.ar/images/f960/DATAWEB.jpg">
+
+</div>
+</body>    
+</html>
